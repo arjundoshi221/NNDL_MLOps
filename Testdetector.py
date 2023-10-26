@@ -49,7 +49,7 @@ if ask == "inception":
 # you may download one from here : https://www.pexels.com/video/three-girls-laughing-5273028/
 
 
-cap = cv2.VideoCapture("testvid2.mp4")
+cap = cv2.VideoCapture('testvideo.mp4')
 
 while True:
     # Find haar cascade to draw bounding box around face
@@ -64,7 +64,7 @@ while True:
     rgb_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
 
     # detect faces available on camera
-    num_peds = pedestrian_detector.detectMultiScale(rgb_frame, scaleFactor=1.3, minNeighbors=5)
+    num_peds = pedestrian_detector.detectMultiScale(rgb_frame, scaleFactor=6.0, minNeighbors=1)
     print(f"Number of pedestrians detected: {len(num_peds)}")
 
     # take each face available on the camera and Preprocess it
