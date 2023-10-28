@@ -129,5 +129,5 @@ cv2.destroyAllWindows()
 
 ```
 
-**Link for model weights and haarcascades**:
+**Link for model weights**:
 <https://drive.google.com/drive/folders/1w-4v_4ZLjaxT6XlAiIQkOUpQnKni6aeW?usp=sharing>
